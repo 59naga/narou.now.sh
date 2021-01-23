@@ -1,0 +1,30 @@
+parserOptions:
+  parser: babel-eslint
+  ecmaVersion: 2017
+  sourceType: module
+
+env:
+  browser: true
+
+globals:
+  VisSense: true
+  Velocity: true
+
+extends:
+  - standard
+  - plugin:vue/recommended
+
+plugins: 
+  -  standard
+  -  vue
+
+rules:
+  no-new:
+    - warn
+
+  handle-callback-err:
+    - warn
+
+  vue/max-attributes-per-line:
+    - error
+    - singleline: 3
